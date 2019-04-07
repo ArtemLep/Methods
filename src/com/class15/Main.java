@@ -1,23 +1,11 @@
 package com.class15;
 
-public class Main {
-	void m1() {
-		System.out.println("m1 method implementation");
-
+class Main {
+	  void PrintTwice(String s){
+	    System.out.println();
+	  }
+	  
+	  public static void main(String[] args) {
+	    System.out.println("Don't make me say this twice!");
+	  }
 	}
-
-	void m2() {
-		System.out.println("m2 method implementation");
-	}
-
-	public static void main(String[] args) {
-
-		Main obj = new Main();
-
-		obj.m1();
-
-		obj.m2();
-
-		System.out.println();
-	}
-}

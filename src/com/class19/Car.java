@@ -1,50 +1,64 @@
 package com.class19;
 
 public class Car {
-	public static String make="Toyota";
+	public String make = "unknown";
 
-	String color;// declaring instance variable
+	public String model = "unknown";
 
-	String model;
+	public int numberOfDoors = 4;
 
-	int doors;
+	public int topSpeed = 90;
 
-	boolean engine;
+	public double price = 0.0;// 1
 
-//	    Car() {//constructor
+	public Car(String make, String model, int numbersOfDoors, int topSpeed, double price) {
 
-//	        System.out.println(“I am a constructor”);
+		this.make = make;
 
-//	        System.out.println(“Hello from constructor”);
+		this.model = model;
 
-//	    }
+		this.numberOfDoors = numberOfDoors;
 
-	public static void main(String[] args) {
+		this.topSpeed = topSpeed;
 
-		Car obj = new Car();
-
-		System.out.println(obj.color);
-
-		System.out.println(obj.doors);
-
-		System.out.println(obj.engine);
-
-		// hello();
+		this.price = price;
 
 	}
 
-	public static void hello() {
+//2
 
-	        //before using local variable we have to initialize it
+	public Car(String make, String model, int topSpeed, double price) {
 
-	        String name;
+		this.make = make;
 
-	        //System.out.println(name); compiler will give you an error
+		this.model = model;
 
-	        System.out.println("I am a
+		this.topSpeed = topSpeed;
 
-	static hello method");
+		this.price = price;
 
-}
+	}
+
+	// 3
+
+	public Car(int numbersOfDoors, int topSpeed, double price) {
+
+		this.topSpeed = topSpeed;
+
+		this.price = price;
+
+	}
+
+	// 4
+
+	public Car(String make, String model, int numbersOfDoors) {
+
+		this.make = make;
+
+		this.model = model;
+
+		this.numberOfDoors = numberOfDoors;
+
+	}
 
 }

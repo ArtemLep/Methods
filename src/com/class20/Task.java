@@ -2,21 +2,31 @@ package com.class20;
 
 public class Task {
 
-	public void res(int a) {
+	/*
+	 * area of rectangle - width* length(5*4)
+	 * 
+	 * area of square - width*width(4)
+	 * 
+	 * area of box - width*length*height(3*4*5)
+	 * 
+	 */
 
-		System.out.println(a * a);
+	public void getArea(int a, int b) {
+
+		System.out.println("the area of a rectangle is " + (a * b));
+
+	}
+
+	public void getArea(int a) {
+
+		System.out.println("the area of a square is " + (a * a));
 
 	}
 
-	public void res(int a, int b) {
+	public void getArea(int a, int b, int c) {
 
-		System.out.println(a * b);
-
-	}
-
-	public void res(double a) {
-
-		System.out.println(6 * (a * a));
+		System.out.println("the area of a box is " + (a * b * c));
 
 	}
+
 }

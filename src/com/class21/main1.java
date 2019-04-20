@@ -1,19 +1,20 @@
 package com.class21;
 
 public class main1 {
-	String Student1="John";
-	int batch=3;
-
+    
 
 	public static void main(String[] args) {
+		variable =200;
+		Main var = new Main();
 
-		main1 var = new main1();
+		Main var1 = new Main();
+		Main var2 = new Main();
 
-		main1 var1 = new main1();
+		System.out.println(var.x);
 
-		System.out.println(var.Student1);
+		System.out.println(var1.y);
+		System.out.println(var2.z);
 
-		System.out.println(var1.batch);
 	}
 
 }

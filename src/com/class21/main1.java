@@ -5,10 +5,10 @@ public class main1 {
 
 	public static void main(String[] args) {
 		variable =200;
-		Main var = new Main();
+		UserTestt var = new UserTestt();
 
-		Main var1 = new Main();
-		Main var2 = new Main();
+		UserTestt var1 = new UserTestt();
+		UserTestt var2 = new UserTestt();
 
 		System.out.println(var.x);
 

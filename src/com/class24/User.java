@@ -14,7 +14,7 @@ public class User {
 		this.mobileNumber=mN;
 	}
 }
-		 class userInfo extends user{
+		 class userInfo extends User{
 			String userAddress;
 			
 		userInfo(String name,int mN,String uAdd){

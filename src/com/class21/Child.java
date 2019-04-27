@@ -1,6 +1,6 @@
 package com.class21;
 
-public class Child extends Parent {
+public class Child extends Parent1 {
 
 	public void love() {
 

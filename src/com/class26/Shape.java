@@ -7,58 +7,62 @@ package com.class26;
  */
 public interface Shape {
 
-	public void calculateArea();
+	void calculateArea(double num);
 
-	public void calculatePerimeter();
+	void calculatePerimiter(double num);
 
 }
 
 class Circle implements Shape {
 
-	int r = 10;
+	@Override
 
-	double pi = 3.14;
+	public void calculateArea(double num) {
 
-	public void calculateArea() {
+		double area = 3.14 * (num * num);
 
-    double area;
+		System.out.println(area);
 
-        area = pi * r * r;
+	}
 
-        System.out.println("Area of circle: "+area);
+	@Override
 
-    }
+	public void calculatePerimiter(double num) {
 
-	public void calculatePerimeter() {
+		double perimiter = 2 * (num * 3.14);
 
-        double perimeter = 2 * pi *r;
+		System.out.println(perimiter);
 
-        System.out.println("Perimeter of circle: "+perimeter);
+	}
 
-    }
+	public void whoAmI() {
+
+		System.out.println("I am a circle");
+
+	}
 
 }
 
 class Square implements Shape {
 
-	int x = 10;
+	@Override
 
-	int y = 20;
+	public void calculateArea(double num) {
 
-	public void calculateArea() {    
+		double area = num * num;
 
-        int area=x*x;
+		System.out.println(area);
 
-        System.out.println("Area of Square: "+area);
+	}
 
-    }
+	@Override
 
-	public void calculatePerimeter() {
+	public void calculatePerimiter(double num) {
 
-        int perimeter=4*x;
+		double perimiter = 4 * num;
 
-        System.out.println("Perimeter of Square: "+perimeter);
+		System.out.println(perimiter);
 
-    }
+	}
 
 }

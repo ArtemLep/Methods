@@ -3,16 +3,18 @@ package com.class26;
 public class ShapeTest {
 
 	public static void main(String[] args) {
-		Shape play = new Circle();
+		Circle circle = new Circle();
 
-		play.calculateArea();
+		circle.calculateArea(20.5);
 
-		play.calculatePerimeter();
+		circle.calculatePerimiter(40);
 
-		Shape play1 = new Square();
+		Shape obj1 = new Circle();
 
-		play1.calculateArea();
+		obj1.calculateArea(10);
 
-		play1.calculatePerimeter();
+		obj1.calculatePerimiter(20);
+
+		// obj1.whoAmI(); not available cunku
 	}
 }
